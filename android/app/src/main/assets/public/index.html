@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Prevent extensions from throwing "Cannot set property fetch of #<Window> which has only a getter"
+      (function() {
+        try {
+          var _nativeFetch = window.fetch ? window.fetch.bind(window) : null;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _nativeFetch;
+            },
+            set: function(val) {
+              _nativeFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // ignore if redefine is not permitted
+        }
+
+        // Suppress benign third-party chrome-extension errors
+        window.addEventListener('error', function(event) {
+          if (event.filename && event.filename.indexOf('chrome-extension://') !== -1) {
+            event.stopImmediatePropagation();
+          }
+        }, true);
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Minute Card Calculator</title>
+    <meta name="description" content="Modern, user-friendly calculator web app for managing Minute Card sales, volume pricing, and automatic total calculations." />
+    <meta name="theme-color" content="#3aa84b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:title" content="Minute Card Calculator" />
+    <meta property="og:description" content="Modern, user-friendly calculator web app for managing Minute Card sales, volume pricing, and automatic total calculations." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-ZhZSWWKS.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DU3WDT7e.css">
+  </head>
+  <body class="bg-slate-100 sm:bg-slate-200 text-neutral-900 antialiased min-h-screen selection:bg-emerald-100 selection:text-emerald-900 overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
+

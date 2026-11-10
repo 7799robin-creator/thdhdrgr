@@ -1,0 +1,5 @@
+{
+	"appId": "com.cashcounter.app",
+	"appName": "Cash Counter",
+	"webDir": "dist"
+}

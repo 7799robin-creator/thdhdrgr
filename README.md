@@ -1,11 +1,122 @@
-<div align="center">
+# 💰 Cash Counter & Minute Card Voucher Manager
+### (ক্যাশ কাউন্টার ও মিনিট কার্ড ম্যানেজার)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+> **App developed by ROBIN**
 
-  <h1>Built with AI Studio</h2>
+একটি আধুনিক, দ্রুত ও প্রফেশনাল ক্যাশ ক্যালকুলেটর ও মিনিট কার্ড ইনভেন্টরি ম্যানেজমেন্ট ওয়েব ও অ্যান্ড্রয়েড অ্যাপ। বাংলাদেশি টাকা ও টেলিকম রিটেইলারদের হিসাবের সুবিধার জন্য বিশেষভাবে তৈরি।
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## ✨ প্রধান বৈশিষ্ট্যসমূহ (Features)
 
-</div>
+### ১. নগদ টাকা কাউন্টার (Cash Notes Counter)
+- ৳১০০০, ৳৫০০, ৳২০০, ৳১০০, ৳৫০, ৳২০, ৳১০, ৳৫, ৳২, ৳১ নোটের সঠিক হিসাব।
+- কুইক প্রেসেট বাটন (১০, ২০, ৫০, ১০০) এবং কাস্টম নোট ইনপুট।
+- মোট টাকা কথায় লেখা (In Words - বাংলা ও ইংরেজি)।
+- ক্যাশ ইন / ক্যাশ আউট ড্রয়ার সামারি।
+
+### ২. মিনিট কার্ড ভাউচার ম্যানেজার (Minute Card Voucher Manager)
+- ২৯ টাকা, ১৯ টাকা, ৪৯ টাকা, ৯৯ টাকা, ১৯৯ টাকা সহ যেকোনো কাস্টম মিনিট কার্ড তৈরি ও এডিট করার সুবিধা।
+- **রিয়েল-টাইম স্টক মাইনাস ভিউ (Live Stock Deduction):**
+  - কার্ডে বিক্রির সংখ্যা বসালে স্টক ব্যাজের ভেতরেই সরাসরি লাইভ দেখায়: `Stock: 760 − 10 = 750 pcs`।
+- **স্বয়ংক্রিয় স্টক ম্যানেজমেন্ট:**
+  - হিসাব সেভ করার সাথে সাথে বিক্রি হওয়া কার্ড মূল স্টক থেকে স্বয়ংক্রিয়ভাবে মাইনাস হয়ে যায়।
+- প্রতিটি কার্ডের রেডিমেড থিম ও ভাউচার স্টাইলিং।
+- লাভ (Profit) ও ইনভেস্টমেন্ট হিসাব স্বয়ংক্রিয়ভাবে পর্যবেক্ষণ।
+
+### ৩. হিস্ট্রি ও রিপোর্ট (Saved History)
+- প্রতিটি সেভ করা হিসাবের নিখুঁত ব্রেকডাউন (তারিখ ও সময় সহ)।
+- মিনিট কার্ডের মূল ভাউচার রঙ ও MRP ব্যাজ সহ হিস্ট্রি ডিসপ্লে।
+- এক ক্লিকে হোয়াটসঅ্যাপ, মেসেঞ্জার বা এসএমএসে হিসাব শেয়ার বা কপি করার সুবিধা।
+
+### ৪. ডিজাইন ও সেটিংস
+- মোবাইল ও ডেস্কটপ ফ্রেন্ডলি সম্পূর্ণ রেসপনসিভ ডিজাইন।
+- বাংলা ও ইংরেজি দ্বিভাষিক সাপোর্ট (Bilingual Toggle)।
+- সাউন্ড ইফেক্ট অন/অফ টগল।
+- ফুটার কালার থিম সুইচ (Slate, Emerald, Navy)।
+- অ্যান্ড্রয়েড ক্যাপাসিটর (Capacitor) সাপোর্ট।
+
+---
+
+## 🛠️ টেকনোলজি স্ট্যাক (Tech Stack)
+
+- **Framework:** [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Mobile Runtime:** [Capacitor 8](https://capacitorjs.com/) (Android)
+
+---
+
+## 🚀 লোকাল সেটআপ ও রান করার নিয়ম (Getting Started)
+
+### ১. রিপোজিটরি ক্লোন করুন
+```bash
+git clone https://github.com/your-username/cash-counter-minute-card.git
+cd cash-counter-minute-card
+```
+
+### ২. ডিপেন্ডেন্সি ইনস্টল করুন
+```bash
+npm install
+```
+
+### ৩. ডেভেলপমেন্ট সার্ভার চালু করুন
+```bash
+npm run dev
+```
+ব্রাউজারে চালু করতে ওপেন করুন: `http://localhost:3000`
+
+### ৪. প্রডাকশন বিল্ড তৈরি করুন
+```bash
+npm run build
+```
+
+---
+
+## 📱 অ্যান্ড্রয়েড APK বিল্ড করার নিয়ম (Android APK Build)
+
+এই প্রোজেক্টটিতে Capacitor কনফিগার করা আছে। অ্যান্ড্রয়েড বিল্ড করতে:
+
+```bash
+# ১. ওয়েব বিল্ড তৈরি ও সিঙ্ক করুন
+npm run build
+npx cap sync android
+
+# ২. অ্যান্ড্রয়েড স্টুডিওতে ওপেন করতে
+npx cap open android
+```
+অথবা স্ক্রিপ্টের মাধ্যমে সরাসরি বিল্ড করতে:
+```bash
+bash scripts/build_android_apk.sh
+```
+
+---
+
+## 📁 প্রোজেক্ট স্ট্রাকচার (Project Structure)
+
+```text
+├── android/               # Capacitor Android নেটিভ প্রোজেক্ট
+├── public/                # স্ট্যাটিক অ্যাসেটস
+├── scripts/               # অটোমেশন ও অ্যান্ড্রয়েড বিল্ড স্ক্রিপ্ট
+├── src/
+│   ├── components/
+│   │   └── CashCounter.tsx # মূল ক্যাশ কাউন্টার ও মিনিট কার্ড লজিক
+│   ├── utils/
+│   │   └── numberToBengaliWords.ts # কথায় রূপান্তর ইউটিলিটি
+│   ├── App.tsx            # রুট কম্পোনেন্ট
+│   ├── main.tsx           # অ্যাপ এন্ট্রি পয়েন্ট
+│   └── types.ts           # টাইপস্ক্রিপ্ট ইন্টারফেস ও ডেটা মডেল
+├── capacitor.config.ts    # ক্যাপাসিটর কনফিগারেশন
+├── package.json           # ডিপেন্ডেন্সি ও স্ক্রিপ্টস
+├── tsconfig.json          # টাইপস্ক্রিপ্ট কনফিগারেশন
+├── vite.config.ts         # ভাইট কনফিগারেশন
+└── README.md              # ডকুমেন্টেশন
+```
+
+---
+
+## 👤 ডেভেলপার ক্রেডিট
+
+- **App developed by:** ROBIN
+- **License:** MIT

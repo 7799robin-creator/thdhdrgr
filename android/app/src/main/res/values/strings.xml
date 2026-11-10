@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Cash Counter</string>
+    <string name="title_activity_main">Cash Counter</string>
+    <string name="package_name">com.cashcounter.app</string>
+    <string name="custom_url_scheme">com.cashcounter.app</string>
+</resources>
